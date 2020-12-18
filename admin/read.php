@@ -16,13 +16,10 @@
             if(!$conn){
                 die('Kết nối thất bại'.mysqli_connect_error());
             }
-            $sql = "select * from employees";
+            $sql = "select * from employees where id = $id";
             mysqli_set_charset($conn,'UTF8');
             $result = mysqli_query($conn,$sql);
-            if(mysqli_num_rows($result)>0){
-                $post_list = mysqli_fetch_all($result);
-            }
-            echo"<p>ID:".</p>";
+            echo"<p>ID:".$result[0]."</p>";
             echo"<p></p>";
             echo"<p></p>";
             echo"<p></p>";
