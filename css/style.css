@@ -1,0 +1,12 @@
+table tr td:last-child{
+    margin-right: 16px;
+}
+table thead{
+    width: 90%;
+}
+.ct{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
