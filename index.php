@@ -46,9 +46,11 @@
                     echo"<td>$post[1]</td>";
                     echo"<td>$post[2]</td>";
                     echo"<td>$post[3]</td>";
-                    echo"<td class='ct'><a href='admin/read.php?id=". $post[0] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'><img src='icon/b_search.png'>&nbsp; read</span></a></td>";
-                    echo"<td class='ct'><a href='admin/update.php?id=". $post[0] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'><img src='icon/b_inline_edit.png'>&nbsp; update</span></a></td>";
-                    echo"<td class='ct'><a href='admin/delete.php?id=". $post[0] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'><img src='icon/b_empty.png'>&nbsp; delete</span></a></td>";
+                    echo"<td class='ct'>";
+                    echo"<a href='admin/read.php?id=". $post[0] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'><img src='icon/b_search.png'>&nbsp; read</span></a>";
+                    echo"<a href='admin/update.php?id=". $post[0] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'><img src='icon/b_inline_edit.png'>&nbsp; update</span></a>";
+                    echo"<a href='admin/delete.php?id=". $post[0] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'><img src='icon/b_empty.png'>&nbsp; delete</span></a>";
+                    echo"</td>";
                     echo"</tr>";
             }
             echo'</div>';
