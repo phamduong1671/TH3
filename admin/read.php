@@ -19,10 +19,15 @@
             $sql = "select * from employees where id = $id";
             mysqli_set_charset($conn,'UTF8');
             $result = mysqli_query($conn,$sql);
-            echo"<p>ID:".$result[0]."</p>";
-            echo"<p></p>";
-            echo"<p></p>";
-            echo"<p></p>";
+            if(mysqli_num_rows($result)>0){
+                $post_list = mysqli_fetch_all($result);
+            }
+            foreach($post_list as $post){
+            echo"<p>ID: &nbsp".$post[0]."</p>";
+            echo"<p>Name: &nbsp".$post[1]."</p>";
+            echo"<p>Address: &nbsp".$post[2]."</p>";
+            echo"<p>Salary: &nbsp".$post[3]."</p>";
+            }
         ?>
     </div>
 </body>
