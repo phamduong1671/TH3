@@ -9,9 +9,11 @@
 </head>
 <body>
     <div class = "conteiner">
-        <div>
-            <h1>Quản Lý Nhân Viên</h1>
-            <a href="admin/create.php">Add new employee</a>
+        <div class="row">
+        <div class="col-md-12">
+            <h1 class="pull-left">Quản Lý Nhân Viên</h1>
+            <a href="admin/create.php" class="pull-right">Add new employee</a>
+        </div>
         </div>
         <section class = "users">
         <?php
@@ -46,7 +48,7 @@
                     echo"<td>$post[1]</td>";
                     echo"<td>$post[2]</td>";
                     echo"<td>$post[3]</td>";
-                    echo"<td class='ct'>";
+                    echo"<td>";
                     echo"<a href='admin/read.php?id=". $post[0] ."' title='View Record' data-toggle='tooltip'><span class='glyphicon glyphicon-eye-open'><img src='icon/b_search.png'>&nbsp; read</span></a>";
                     echo"<a href='admin/update.php?id=". $post[0] ."' title='Update Record' data-toggle='tooltip'><span class='glyphicon glyphicon-pencil'><img src='icon/b_inline_edit.png'>&nbsp; update</span></a>";
                     echo"<a href='admin/delete.php?id=". $post[0] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'><img src='icon/b_empty.png'>&nbsp; delete</span></a>";
