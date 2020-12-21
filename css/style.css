@@ -1,4 +1,4 @@
-table tr td:last-child{
+table{
     margin-right: 16px;
 }
 table thead{
